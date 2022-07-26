@@ -364,7 +364,7 @@ class ROSDriver(NetworkDriver):
             ),
         }
 
-    def get_config(self, retrieve='all', full=False, sanitized=False):
+    def get_config(self, retrieve='all', full=True, sanitized=False):
         command = "export terse"
         if full:
             command = command + " verbose"
